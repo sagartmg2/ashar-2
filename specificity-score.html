@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 120 */
+          #orange.red.description {
+            color: red;
+        }
+
+        /* 112 */
+        body p#orange.red {
+            color: red;
+        }
+        /* 111 */
+        p#orange.red {
+            color: black;
+        }
+
+
+        /* 102 */
+        body p#orange {
+            color: black;
+        }
+
+        /* 1 0 1   */
+        p#orange {
+            color: rebeccapurple;
+        }
+
+        /* 100 */
+        #orange {
+            color: orange;
+        }
+
+        /* 010 */
+        .red {
+            color: red;
+        }
+
+        /* 0  0  2 */
+        body p {
+            color: aqua !important;
+        }
+
+        /* 0 0 1 */
+        p {
+            color: gold !important;
+        }
+
+        h1:hover{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>specificity score</h1>
+    <span>
+        id > class > tag
+    </span>
+    <br>
+    <span> number of ids ,number of class , number of tags</span>
+    <hr>
+
+
+    <p class="red description" id="orange"  style="color:gray" >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur et ratione alias at corrupti perspiciatis
+        minus. Iusto voluptatibus adipisci quo porro magni sequi, officiis iure ducimus quidem voluptas eum
+        reprehenderit!
+    </p>
+
+</body>
+
+</html>
