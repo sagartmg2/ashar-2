@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="samsung mobile price in nepal, mobile in ktm, ">
+    <meta name="description" content=" our website is about mern /web class ">
+    <title>Web</title>
+
+    <!-- 
+
+         to comment use : ctrl + /  
+            CSS syntax
+    
+            <selector> {
+                <css-property> : <value>;
+                <another-css-property> : <value>;
+            }
+
+            selector 
+                - tag / elements
+                - id
+                - class
+                - combined..
+    
+     -->
+    <style>
+        h1 {
+            color: red;
+            text-align: center
+        }
+
+        h2 {
+            color: orange
+        }
+
+        h3 {
+            color: cyan
+        }
+
+        a {
+            color: black;
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+        }
+
+        header {
+            background-color: antiquewhite;
+        }
+
+        footer {
+            background-color: antiquewhite;
+        }
+    </style>
+
+    <style>
+        /* selelctor {
+            css-proeprty : css-value
+        } 
+            selectors
+               - tag/element
+               - id
+        */
+
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th {
+            border: 1px solid;
+        }
+
+        td {
+            border: 1px solid;
+        }
+
+        li {}
+
+        /* #relative-path , #exteranl{
+            background-color: yellow;
+        } */
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* #relative-path{
+            text-decoration: underline;
+        }
+        #css{
+            text-decoration: underline;
+        }
+        #inline{
+            text-decoration: underline;
+        }
+         */
+
+        .underline {
+            text-decoration: underline;
+        }
+        a{
+            margin-left:16px
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <a href="./contact.html"> contact </a>
+        <a href="./aboutus.html"> About </a>
+        <a href="./courses/python.html"> python </a>
+        <a href="./courses/web.html"> web </a>
+        <a href="./courses/upcomming/data-science.html"> data science</a>
+        <a href="./courses/upcomming/qa.html">QA</a>
+    </header>
+
+    <h1>Web/Mern</h1>
+
+
+    <hr>
+    <p>this is web class. rum. Lorem ipsubitis fuga. </p>
+    <hr>
+
+    <h2>
+        HTML
+    </h2>
+
+    <ul>
+        <li>
+            <h3>Elements / tag </h3>
+            eg: &lt; element&gt; ...&lt;/element>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In </p>
+        </li>
+        <li>
+            <h3>Attribute</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quas ex laborum libero corrupti nesciunt
+                veritat</p>
+        </li>
+        <li>
+            <h3>Paths</h3>
+            <ol>
+                <li>
+                    absolute path
+                </li>
+                <li id="relative-path" class="highlight underline ">
+                    relative path
+                </li>
+            </ol>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h2 id="css " class="underline highlight" > 
+        Css
+    </h2>
+
+    <ol>
+        <li>
+            <h3 id="inline" class="underline"> inline</h3>
+        </li>
+        <li>
+            <h3> score</h3>
+        </li>
+        <li>
+            <h3> box-sizing..</h3>
+        </li>
+        <li>
+            <h3> Typography</h3>
+        </li>
+        <li>
+            <h3>Link Css</h3>
+            <ul>
+                <li>inline</li>
+                <li>internal</li>
+                <li id="exteranl" class="highlight">exteranl</li>
+            </ul>
+        </li>
+        <!-- to copy code down alt + shift + downArrow -->
+    </ol>
+
+    <img src="./laptop.jpg" alt="" width="500">
+    <img src="./assets/images/500.jpg" alt="" width="500">
+    <img src="./assets/images/1000.jpg" alt="" width="500">
+    <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="">
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>companay</th>
+                <th>contact</th>
+                <th>country</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>cmp-2</td>
+                <td>222</td>
+                <td>india</td>
+            </tr>
+            <tr>
+                <td>cmp-3</td>
+                <td>333</td>
+                <td>usa</td>
+            </tr>
+        </tbody>
+
+
+
+    </table>
+
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Qauntity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>apple</td>
+                <td>10</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>oraange</td>
+                <td>5</td>
+                <td>50</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="2" style="text-align:center">Total Price</td>
+            <td>150</td>
+        </tfoot>
+    </table>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2" style="color:red">Name</th>
+                <th rowspan="2">email</th>
+            </tr>
+            <tr>
+                <th>first</th>
+                <th>last</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>john</td>
+                <td>doe</td>
+                <td>jhon@jhon.com</td>
+            </tr>
+            <tr>
+                <td>john</td>
+                <td>doe</td>
+                <td>jhon@jhon.com</td>
+            </tr>
+            <tr>
+                <td>john</td>
+                <td>doe</td>
+                <td>jhon@jhon.com</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+
+
+    <footer>
+        <a href="https://www.google.com" target="_blank">
+            Google
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+            Youtube
+        </a>
+    </footer>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
