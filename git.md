@@ -18,6 +18,8 @@ git branch
     eg 
     git add index.html
     git add git.md
+    or to add all files at once
+    git add . 
 3. git commit -m "html "
 4. git push 
 
