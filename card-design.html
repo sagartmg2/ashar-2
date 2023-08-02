@@ -16,13 +16,20 @@
             background-color: #F6F8FA;
         }
 
+        .card-container{
+            background-color: cyan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            /* width: 100vw; */
+
+        }
+
         .card {
             padding: 1rem;
             border: 1px solid;
             width: 400px;
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: 2rem;
             border-radius: 10px;
             background-color: white;
         }
@@ -41,12 +48,12 @@
             padding: 2px 4px;
         }
 
-        .tag:not(:first-child){
+        .tag:not(:first-child) {
             margin-left: 8px;
         }
 
 
-        footer{
+        footer {
             margin-top: 1rem;
             margin-bottom: 1rem;
         }
@@ -63,37 +70,40 @@
 </head>
 
 <body>
-    <div class="card">
-        <img src="https://thumbs.dreamstime.com/z/nepali-boy-construction-work-kathmandu-nepal-may-working-reconstruction-lake-earthquake-72379098.jpg?w=768"
-            alt="" width="400">
-        <div>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://thumbs.dreamstime.com/z/nepali-boy-construction-work-kathmandu-nepal-may-working-reconstruction-lake-earthquake-72379098.jpg?w=768"
+                alt="" width="400">
+            <div>
 
-            <div class="tags">
-                <span class="tag">
-                    Situation
-                </span>
-                <span class="tag">
-                    Situation
-                </span>
-                <span class="tag">
-                    Situation
-                </span>
+                <div class="tags">
+                    <span class="tag">
+                        Situation
+                    </span>
+                    <span class="tag">
+                        Situation
+                    </span>
+                    <span class="tag">
+                        Situation
+                    </span>
+                </div>
+                <h1>Child Labour in Nepal</h1>
+                <p>Despite rates of child labour declining over the last few years.</p>
+                <footer>
+                    <a href="#">
+                        Read More
+                    </a>
+                </footer>
             </div>
-
-
-
-
-            <h1>Child Labour in Nepal</h1>
-            <p>Despite rates of child labour declining over the last few years.</p>
-
-            <footer>
-                <a href="#">
-                    Read More
-                </a>
-            </footer>
         </div>
-
     </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sequi officia, dolores expedita unde corrupti eveniet maiores omnis, nihil debitis quo doloremque voluptatibus nostrum atque temporibus voluptatem quia ex ea.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sequi officia, dolores expedita unde corrupti eveniet maiores omnis, nihil debitis quo doloremque voluptatibus nostrum atque temporibus voluptatem quia ex ea.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sequi officia, dolores expedita unde corrupti eveniet maiores omnis, nihil debitis quo doloremque voluptatibus nostrum atque temporibus voluptatem quia ex ea.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sequi officia, dolores expedita unde corrupti eveniet maiores omnis, nihil debitis quo doloremque voluptatibus nostrum atque temporibus voluptatem quia ex ea.</p>
+
+
 
 </body>
 
