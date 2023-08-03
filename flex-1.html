@@ -8,23 +8,37 @@
         .parent{
             border: 1px solid;
             height: 400px;
-            width: 50%;
             display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
             justify-content: center;
-            align-items:center
-         
         }
         .child{
             background-color: orange;
             height: 100px;
             width: 100px;
             border: 1px solid;
+            order: 0;
+        }
+
+        .child:nth-child(2){
+            background-color: red;
+            /* order: -1; */
         }
        
     </style>
 </head>
 <body>
     <div class="parent">
+        <div class="child">child</div>
+        <div class="child">child</div>
+        <div class="child">child</div>
+        <div class="child">child</div>
+        <div class="child">child</div>
+        <div class="child">child</div>
+        <div class="child">child</div>
+        <div class="child">child</div>
         <div class="child">child</div>
         <div class="child">child</div>
         <div class="child">child</div>
