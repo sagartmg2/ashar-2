@@ -13,26 +13,38 @@
 
     <header>
 
-        <span>LaslesVPN</span>
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Home</a>
-                </li>
-                <li>
-                    <a href="">Home</a>
-                </li>
-                <li>
-                    <a href="">Home</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div>
-            <button>signin</button>
-            <button>singup</button>
+        <div class="logo-wrapper">
+            <img src="./assets/images/Standard Collection 27logo.png" alt="">
+            <p>Lasles VPN</p>
         </div>
+
+        <img onclick='document.getElementById("sidebar").classList.add("active")' class="menu" width="24" height="24"
+            src="./assets/images/iconmonstr-menu-right-lined.svg" alt="">
+
+        <div class="sidebar" id="sidebar">
+            <nav>
+                <ul>
+                    <li class="">
+                        <a href="" class="active">home</a>
+                    </li>
+                    <li>
+                        <a href="">contact</a>
+                    </li>
+                    <li>
+                        <a href="">testimonial</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="auth">
+                <a href="#"> sign in</a>
+                <button class="btn btn-outline">sign up</button>
+            </div>
+        </div>
+
+
+
+
     </header>
 
 
