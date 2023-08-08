@@ -47,7 +47,7 @@ header a:hover {
     color: var(--primary-color)
 }
 
-header .active {
+header a.active {
     color: var(--primary-color)
 }
 
@@ -74,12 +74,19 @@ header .active {
     bottom: 0;
     padding: 2rem;
     background-color: orange;
+    /* position: relative; */
     /* display: none; */
+    transition: all 1s;
+}
+.close-icon{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
 }
 
 .sidebar.active {
     transform: translate(0%);
-    transition: all 1s;
+   
 
 }
 
@@ -95,12 +102,24 @@ nav ul,
     margin-top: 1rem;
 }
 
+
+
+
 @media (min-width:1024px) {
     .sidebar {
+        transform: translateX(0%);
         background-color: transparent;
         position: static;
         display: flex;
         flex-grow: 1;
+        justify-content: space-between;
+    }
+
+    nav{
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        
     }
 
     nav ul,
