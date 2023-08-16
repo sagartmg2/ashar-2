@@ -4,15 +4,15 @@ let response = {
         todos: [
             {
                 name: "html",
-                status: "completed",
+                status: true,
             },
             {
                 name: "css",
-                status: "completed",
+                status: true,
             },
             {
                 name: "js",
-                status: "pending",
+                status: false,
             }
         ]
     }
