@@ -18,6 +18,15 @@ let response = {
     }
 }
 
+/*  TODO:
+    OUTPUT
+    html is completed
+    css is complted
+    js is pending
+*/
+
+
+
 // console.log(response.result.todos[0].title, "is", response.result.todos[0].status);
 // console.log(response.result.todos[1].title, "is", response.result.todos[1].status);
 // console.log(response.result.todos[2].title, "is", response.result.todos[2].status);
