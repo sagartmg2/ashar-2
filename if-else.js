@@ -40,10 +40,6 @@ if (willRain) {
 
 
 
-
-
-
-
 if (willRain) {
     console.log("take umbrealla");
 } else {
