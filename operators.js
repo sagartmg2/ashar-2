@@ -77,7 +77,6 @@ console.log("1" === "1"); // true  // strict equality operator // checks for the
 //     console.log("true");
 // }
 
-
 function calcualte(num1, num2, type) {
     if (type === "MINUS") {
         console.log(`${num1} - ${num2} = ${num1 - num2}`);
