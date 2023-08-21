@@ -159,10 +159,16 @@ let response = {
 
 */
 
-function printInfo(index) { // index is called parameter
-    // console.log("index",index)
+// function printInfo(index) { // index is called parameter
+//     // console.log("index",index)
+//     console.log("gender of ", response.users[index].firstName, "is", response.users[index].gender);
+// }
+
+
+const printInfo = (index) => {
     console.log("gender of ", response.users[index].firstName, "is", response.users[index].gender);
 }
+
 /* calling a function, executing a function */
 printInfo(0) // 0 is argument
 printInfo(1) // 1 is argument
@@ -175,14 +181,17 @@ printInfo(2)
 // console.log("1 + 3  = ", 1 + 3);
 // console.log("2 + 5  = ", 2 + 5);
 
-function calculateSum(num1, num2) {
-    // console.log("num1", num1);
-    // console.log({ num2 });
+// function calculateSum(num1, num2) {
+//     // console.log("num1", num1);
+//     // console.log({ num2 });
 
-    // console.log(num1, "+", num2, "=", num1 + num2);
-    // console.log(`${num1} + ${num2} = ${num1 + num2} `);
+//     // console.log(num1, "+", num2, "=", num1 + num2);
+//     // console.log(`${num1} + ${num2} = ${num1 + num2} `);
+//     console.log(`the sum of ${num1} and ${num2} is ${num1 + num2} `);
+// }
+
+const calculateSum = (num1, num2) => {
     console.log(`the sum of ${num1} and ${num2} is ${num1 + num2} `);
-
 }
 
 calculateSum(1, 2)
