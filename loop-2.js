@@ -47,7 +47,7 @@ function printProductInfo(index) {
 /* 
     for (starting_point ; condition ; mutator){
         do some repetitive task. 
-    }
+    }]
 */
 
 
