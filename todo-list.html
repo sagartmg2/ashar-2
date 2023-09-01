@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="addTodo(event)">
+        <input type="text" name="title" autofocus required>
+        <button>add</button>
+    </form>
+
+
+
+    <h1>todo list</h1>
+    <ul id="todos-list">
+
+    </ul>
+
+    <script>
+
+        // let todos = ["html", "css", "js"]
+        let todos = JSON.parse(localStorage.getItem("todos")) || []
+
+        function convertTodosToList(){
+            let todosString = ""
+
+            // for (let i = 0; i < todos.length; i++) {
+            //     todosString += "<li>" + todos[i] + "</li>";
+            // }
+
+            todos.forEach((el) => {
+                todosString += `<li>${el}</li> `
+            })
+
+            // console.log(todosString); //"<li>html</li><li>css</li><li>js</li>"
+
+
+
+            document.getElementById("todos-list").innerHTML = todosString
+        }
+
+
+        convertTodosToList()
+
+        const addTodo = (event) => {
+            event.preventDefault() // prevents page refresh after form submit.
+            console.log(event.target)
+            console.log(event.target.title.value)
+
+            todos.push(event.target.title.value) //["html", "css", "js","react"]
+            console.log(todos);
+
+            convertTodosToList()
+
+            event.target.title.value = ""
+
+            localStorage.setItem("todos", JSON.stringify(todos))
+
+        }
+    </script>
+</body>
+
+</html>

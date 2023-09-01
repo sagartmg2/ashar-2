@@ -18,6 +18,7 @@
     <ul>
         <li>click event</li>
         <li>change event</li>
+        <li>submit event</li>
     </ul> -->
 
     <button onclick="addElement(3)">add 3</button>
@@ -34,9 +35,16 @@
         <option value="">8</option>
     </select> -->
 
+
+
+
     <form onsubmit="addUserInput(event)">
         <!-- <input type="number" id="user-input" value="100" name="user-input"> -->
-        <input type="number" id="user-input" value="100" name="user_input">
+        <input type="number" placeholder="you number"
+         id="user-input"
+          value="100"
+           name="user_input"
+           >
         <!-- <input type="submit" value="add"> -->
         <button>
             add
