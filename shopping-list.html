@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h3>Todo</h3>
+
+    <hr>
+    <pre>
+            create a form 
+            - input field for item
+            - input field for quantity // should be numerical 
+            - add button
+        </pre>
+    </hr>
+
+
+    <pre>
+        first acheive the above 
+        then 
+        on page refresh the added shopping list gets deleted, prevent that. 
+    </pre>
+    <form onsubmit="addNewItem(event)">
+        <input placeholder="title" name="title" required>
+        <input placeholder="quantity" type="number" name="quantity" required>
+        <input type="submit">
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th width="">name</th>
+                <th width="200">quantity</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="shopping-list">
+            <!-- <tr>
+                <td>apple</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>samsung</td>
+                <td>9</td>
+            </tr> -->
+        </tbody>
+    </table>
+    <script>
+
+        // let items = [
+        //     // {
+        //     //     name: "apple",
+        //     //     quantity: "100"
+        //     // }
+        // ]
+
+        let items = JSON.parse(localStorage.getItem("shopping-list")) || []
+
+
+        function convertArrayToLi() {
+
+            let listSting = ` `
+
+            items.forEach((el, index) => {
+                listSting += `
+                    <tr>
+                            <td>${el.title}</td>
+                            <td><button onclick ="deduct(${index})">minus</button> ${el.quantity} <button>add</button></td>
+                            <td><button onclick="deleteItem(${index})">delete</button></td>
+                        </tr>    
+                    `
+            })
+
+            document.getElementById("shopping-list").innerHTML = listSting
+
+            localStorage.setItem("shopping-list", JSON.stringify(items))
+
+        }
+
+        convertArrayToLi()
+
+
+        const deduct = (index) => {
+            console.log({ index });
+            /* TODO:  */
+
+            /* 
+           let items = [
+               {
+                   "name": "apple",
+                   "quantity": "100"
+               },
+               {
+                   "title": "lg",
+                   "quantity": "10"
+               },
+               {
+                   "title": "sony",
+                   "quantity": "10"
+               }
+           ]
+           */
+
+            convertArrayToLi()
+        }
+
+        const deleteItem = (index) => {
+            console.log("delete -index", index)
+            items = items.filter((el, idx) => idx != index)
+
+            convertArrayToLi()
+
+
+            /* create new items[]  where */
+        }
+
+
+
+        const addNewItem = (event) => {
+            event.preventDefault()
+
+            let titleEl = event.target.title  // <input name="title">
+            let quantityEl = event.target.quantity  // // <input name="quantity">
+
+            items.push({
+                title: titleEl.value,
+                quantity: quantityEl.value,
+            })
+
+            titleEl.value = ""
+            quantityEl.value = ""
+
+            console.log({ items })
+
+            /* 
+            [
+                {
+                    "name": "apple",
+                    "quantity": "100"
+                },
+                {
+                    "title": "lg",
+                    "quantity": "10"
+                },
+                {
+                    "title": "sony",
+                    "quantity": "10"
+                }
+            ]
+            */
+
+            convertArrayToLi()
+
+
+        }
+
+    </script>
+</body>
+
+</html>
